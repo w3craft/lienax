@@ -5,6 +5,6 @@
 - name: Main
   link: /main.html
 - name: ЕПВП
-  link: ЕПВП.html
+  link: /ЕПВП.html
 - name: Knowhow
-  link: knowhow.html
+  link: /knowhow.html
