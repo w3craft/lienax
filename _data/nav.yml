@@ -1,18 +1,2 @@
-- name: Source
-  link: https://github.com/w3craft/lienax
 - name: Home
   link: /
-- name: Main
-  link: /main.html
-- name: ЕПВП
-  link: /ЕПВП.html
-- name: Dieta
-  link: /dieta.html
-- name: Manual
-  link: manual.html
-- name: Knowhow
-  link: /knowhow.html
-- name: Potential
-  link: /potential.html
-- name: SSP
-  link: /ssp.html
