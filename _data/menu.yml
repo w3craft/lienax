@@ -1,6 +1,6 @@
-- name: Основное
-  link: /#main
-- name: Инструкция
-  link: /#instructions
+- name: Описание
+  link: /#description
+- name: Аналоги
+  link: /#analogues
 - name: Производитель
   link: /#provider
