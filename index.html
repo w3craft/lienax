@@ -4,7 +4,13 @@ title: Лиенакс
 description: Пиптидный восстановительный, противовоспалительный лосьон "ЛИЕНАКС" с заживляющим и омолаживающим эффектом.
 ---
 <main>
-  {% include menu.html %}
+  <menu class="panel">
+    <p class="panel-tabs">
+    {% for item in site.data.menu %}
+      <a href="{{ item.link }}">{{ item.name }}</a>
+    {% endfor %}
+    </p>
+
   <section class="section" id="main">
     <div class="container">
       <div class="content">
@@ -111,5 +117,5 @@ description: Пиптидный восстановительный, против
       </div>
     </div>
   </section>
-  
+  </menu>  
 </main>
