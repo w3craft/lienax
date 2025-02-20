@@ -1,7 +1,9 @@
-<menu class="navbar-menu">
+<menu class="navbar" role="navigation">
+  <div class="navbar-menu">
     <div class="navbar-start">
       {% for item in site.data.menu %}
         <a class="navbar-item" href="{{ item.link }}">{{ item.name }}</a>
       {% endfor %}
     </div>
+  </div>
 </menu>  
