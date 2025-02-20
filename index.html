@@ -11,16 +11,8 @@ description: Пиптидный восстановительный, против
       </div>
     </div>
   </section>
-  
-  <menu class="panel" id="instructions">
-    <p class="panel-heading">Инструкция</p>
-    <p class="panel-tabs">
-    {% for item in site.data.menu %}
-      <a href="{{ item.link }}">{{ item.name }}</a>
-    {% endfor %}
-    </p>
 
-
+  {% include menu.html %}
   
   <section class="section">
     <div class="container">
@@ -114,7 +106,6 @@ description: Пиптидный восстановительный, против
       </div>
     </div>
   </section>
-  </menu>
   
   <section class="section" id="certificates">
     <div class="container">
