@@ -1,0 +1,7 @@
+<menu class="panel">
+  <p class="panel-tabs">
+  {% for item in site.data.menu %}
+    <a href="{{ item.link }}">{{ item.name }}</a>
+  {% endfor %}
+  </p>
+</menu>  
