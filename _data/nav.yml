@@ -1,2 +1,5 @@
-
+- name: Основное
+  link: /
+- name: Инструкция
+  link: /#instructions
   
