@@ -2,4 +2,11 @@
   link: /#main
 - name: Инструкция
   link: /#instructions
+- name: Описание
+  link: /#description
+- name: Показания к применению
+  link: /#use
+- name: Производитель
+  link: /#provider
+
   
