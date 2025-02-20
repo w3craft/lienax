@@ -1,7 +1,9 @@
-<menu class="panel">
-  <p class="panel-tabs">
-  {% for item in site.data.menu %}
-    <a href="{{ item.link }}">{{ item.name }}</a>
-  {% endfor %}
-  </p>
+<menu class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-menu">
+    <div class="navbar-start">
+      {% for item in site.data.menu %}
+        <a class="navbar-item" href="{{ item.link }}">{{ item.name }}</a>
+      {% endfor %}
+    </div>
+  </div>
 </menu>  
