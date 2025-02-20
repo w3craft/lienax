@@ -1,1 +1,4 @@
 title: Лиенакс
+
+plugins:
+  - "jekyll-seo-tag"
