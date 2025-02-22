@@ -4,7 +4,11 @@
   link: /instructions/описание
 - name: Фармакодинамика
   link: /instructions/фармакодинамика
-- name: Показания-к-применению
+- name: Показания к применению
   link: /instructions/показания-к-применению
 - name: Противопаказания
   link: /instructions/противопаказания
+- name: Способ применения и дозы
+  link: /instructions/способ-применения-и-дозы побочное действие
+- name: Побочное действие
+  link: /instructions/побочное-действие
