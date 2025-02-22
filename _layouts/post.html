@@ -1,4 +1,18 @@
 ---
 layout: base
 ---
+
+<div class="tabs is-toggle is-toggle-rounded is-centered">
+
+    <ul>
+        {% for item in site.data.instruction %}
+        <li {% if page.url==item.link %} class="is-active"  {% endif %}>
+
+            <a href="{{ item.link }}">{{ item.name }}
+            </a>
+
+        </li>
+        {% endfor %}
+    </ul>
+</div>
 {{ content }}
