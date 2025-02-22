@@ -1,5 +1,18 @@
 title: Лиенакс
 description: Пиптидный восстановительный, противовоспалительный лосьон "ЛИЕНАКС" с заживляющим и омолаживающим эффектом.
 copyright: © 2025
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      permalink: "/:categories/:title"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
 plugins:
   - "jekyll-seo-tag"
