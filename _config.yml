@@ -8,7 +8,7 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-      permalink: "/:categories/:description"
+      permalink: "/:categories/:name"
   - scope:
       path: ""
     values:
