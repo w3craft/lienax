@@ -12,7 +12,6 @@ defaults:
       type: "инструкции"
     values:
       layout: "инструкция"
-      permalink: "/:categories/:title"
   - scope:
       path: ""
     values:
