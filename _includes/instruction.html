@@ -13,22 +13,21 @@
                                 противовоспалительного
                                 лосьона "ЛИЕНАКС" с заживляющим и омолаживающим эффектом, 100 мл.</b><br><br>
                             <div class="tabs is-toggle is-toggle-rounded is-centered">
+
                                 <ul>
-                                    <li class="is-active"><a>Описание</a></li>
-                                    <li><a>Courses</a></li>
-                                    <li><a>Practice</a></li>
-                                    <li><a>Jobs</a></li>
+                                    {% for item in site.data.instruction %}
+                                    <li {% if page.url==item.link %} class="is-active"  {% endif %}>
+
+                                        <a href="{{ item.link }}">{{ item.name }}
+                                        </a>
+
+                                    </li>
+                                    {% endfor %}
                                 </ul>
                             </div>
                         </div>
                         <article class="content">
-                            <p>
-                                Лосьон "ЛИЕНАКС" ( lienis от лат. – селезенка ) официально зарегистрирован как
-                                косметическое средство
-                                (лосьон) для неограниченного применения. Патент <a
-                                    href="https://patenton.ru/patent/RU2766340C1.pdf" target="_blank">
-                                    RU-2766340</a>, И.З.Зайцев, В.Викслер и соавт. 2021
-                            </p>
+                            
                         </article>
                     </div>
                 </div>
