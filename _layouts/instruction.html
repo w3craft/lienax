@@ -11,17 +11,13 @@ layout: base
                             <h1 class=" has-text-link">
                                 Инструкция на "Лиенакс"
                             </h1>
-                            <p>Инструкция по косметическому и лечебному применению пептидного
-                                восстановительного,
-                                противовоспалительного
-                                лосьона "ЛИЕНАКС" с заживляющим и омолаживающим эффектом, 100 мл.</p><br><br>
+                            <p>Инструкция по косметическому и лечебному применению пептидного восстановительного, противовоспалительного лосьона "ЛИЕНАКС" с заживляющим и омолаживающим эффектом, 100 мл.</p>
+                            <br>
                             <div class="tabs is-toggle is-toggle-rounded is-centered">
-
                                 <ul>
                                     {% for item in site.data.instruction %}
-                                    <li {% if page.url==item.link %} class="is-active"  {% endif %}>
-                                        <a href="{{ item.link }}">{{ item.name }}
-                                        </a>
+                                    <li>
+                                        <a href="{{ item.link }}">{{ item.name }}</a>
                                     </li>
                                     {% endfor %}
                                 </ul>
