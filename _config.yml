@@ -5,9 +5,9 @@ copyright: © 2025
 defaults:
   - scope:
       path: ""
-      type: "posts"
+      type: "инструкции"
     values:
-      layout: "post"
+      layout: "инструкция"
       permalink: "/:categories/:title"
   - scope:
       path: ""
