@@ -1,14 +1,16 @@
 - name: Состав
   link: /instructions/состав
-- name: Описание
-  link: /instructions/описание
-- name: Фармакодинамика
-  link: /instructions/фармакодинамика
 - name: Показания к применению
   link: /instructions/показания-к-применению
 - name: Противопаказания
   link: /instructions/противопаказания
+- name: Взаимодействие
+  link: /instructions/взаимодействие
 - name: Способ применения и дозы
-  link: /instructions/способ-применения-и-дозы побочное действие
-- name: Побочное действие
-  link: /instructions/побочное-действие
+  link: /instructions/способ-применения-и-дозы
+- name: Аналоги
+  link: /instructions/аналоги
+- name: Хранение
+  link: /instructions/хранение
+- name: Производитель
+  link: /instructions/производитель
