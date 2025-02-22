@@ -1,4 +1,10 @@
-- name: Описание
-  link: /instructions/описание
 - name: Состав
   link: /instructions/состав
+- name: Описание
+  link: /instructions/описание
+- name: Фармакодинамика
+  link: /instructions/фармакодинамика
+- name: Показания-к-применению
+  link: /instructions/показания-к-применению
+- name: Противопаказания
+  link: /instructions/противопаказания
