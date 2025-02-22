@@ -3,15 +3,15 @@ description: Пиптидный восстановительный, против
 copyright: © 2025
 
 collections:
-  инструкции:
+  instructions:
     output: true
 
 defaults:
   - scope:
       path: ""
-      type: "инструкции"
+      type: "instructions"
     values:
-      layout: "инструкция"
+      layout: "instruction"
   - scope:
       path: ""
     values:
