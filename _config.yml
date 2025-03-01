@@ -6,15 +6,8 @@ collections:
   pages:
     output: true
     permalink: ":name"
-  instructions:
-    output: true
 
 defaults:
-  - scope:
-      path: ""
-      type: "instructions"
-    values:
-      layout: "instruction"
   - scope:
       path: ""
       type: "pages"
