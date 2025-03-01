@@ -1,10 +1,10 @@
+- name: О ТИМОЗИНАХ
+  link: /about
 - name: ВОПРОСЫ И ОТВЕТЫ
-  link: /#
+  link: /questions
 - name: ИНСТРУКЦИЯ
   link: /#instructions
-- name: ИССЛЕДОВАНИЯ
-  link: /#
+- name: ПУБЛИКАЦИИ
+  link: /publications
 - name: ПИТАНИЕ
-  link: /# 
-
-  
+  link: /nutrition 
