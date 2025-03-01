@@ -3,7 +3,7 @@
 - name: ВОПРОСЫ И ОТВЕТЫ
   link: /questions
 - name: ИНСТРУКЦИЯ
-  link: /#instructions
+  link: /instruction
 - name: ПУБЛИКАЦИИ
   link: /publications
 - name: ПИТАНИЕ
