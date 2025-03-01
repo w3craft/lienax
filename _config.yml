@@ -3,6 +3,9 @@ description: Пептидный восстановительный, против
 copyright: © 2025
 
 collections:
+  pages:
+    output: true
+    permalink: ":name"
   instructions:
     output: true
 
@@ -12,6 +15,17 @@ defaults:
       type: "instructions"
     values:
       layout: "instruction"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      permalink: "/:categories/:title"
   - scope:
       path: ""
     values:

@@ -1,7 +1,19 @@
-<!DOCTYPE html>
-<html>
-  {% include head.html %}
-  <body>
-    {{ content }}
-  </body>
-</html>
+---
+layout: default
+---
+
+<!-- .hero -->
+<section class="hero is-fullheight">
+
+  <!-- .hero-head -->
+  <div class="hero-head">
+    {% include nav.html %}
+  </div>
+  <!-- /.hero-head -->
+
+</section>
+<!-- /.hero -->
+
+{{ content }}
+
+{% include footer.html %}
