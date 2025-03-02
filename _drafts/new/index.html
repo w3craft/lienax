@@ -4,46 +4,359 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Hello Bulma!</title>
+	<title>ЛИЕНАКС</title>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
 	<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
 	<!-- link rel="stylesheet" href="assets/css/debug.css" -->
+
+	<!-- .Burger toggle -->
+	<script>
+		document.addEventListener('DOMContentLoaded', () => {
+
+			// Get all "navbar-burger" elements
+			const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+			// Add a click event on each of them
+			$navbarBurgers.forEach(el => {
+				el.addEventListener('click', () => {
+
+					// Get the target from the "data-target" attribute
+					const target = el.dataset.target;
+					const $target = document.getElementById(target);
+
+					// Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+					el.classList.toggle('is-active');
+					$target.classList.toggle('is-active');
+
+				});
+			});
+
+		});
+	</script>
+	<!-- /.Burger toggle -->
+
+	<!-- .Delete notify -->
+	<script>
+		document.addEventListener('DOMContentLoaded', () => {
+			(document.querySelectorAll('.notification .delete') || []).forEach(($delete) => {
+				const $notification = $delete.parentNode;
+
+				$delete.addEventListener('click', () => {
+					$notification.parentNode.removeChild($notification);
+				});
+			});
+		});
+	</script>
+	<!-- /.Delete notify -->
+
+	<!-- .Dropdown menu --
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+
+			var dropdown = document.querySelector('.dropdown');
+
+			dropdown.addEventListener('click', function (event) {
+				event.stopPropagation();
+				dropdown.classList.toggle('is-active');
+			});
+		});        
+	</script>
+	!-- /.Dropdown menu -->
+
+	<!-- .dropdown-one menu -->
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+
+			var dropdown = document.querySelector('#dropdown-one');
+
+			dropdown.addEventListener('click', function (event) {
+				event.stopPropagation();
+				dropdown.classList.toggle('is-active');
+			});
+		});        
+	</script>
+	<!-- /.dropdown-one menu -->
+
+	<!-- .dropdown-two menu -->
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+
+			var dropdown = document.querySelector('#dropdown-two');
+
+			dropdown.addEventListener('click', function (event) {
+				event.stopPropagation();
+				dropdown.classList.toggle('is-active');
+			});
+		});        
+	</script>
+	<!-- /.dropdown-two menu -->
+
+	<!-- .dropdown-four menu -->
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+
+			var dropdown = document.querySelector('#dropdown-four');
+
+			dropdown.addEventListener('click', function (event) {
+				event.stopPropagation();
+				dropdown.classList.toggle('is-active');
+			});
+		});        
+	</script>
+	<!-- /.dropdown-four menu -->
+
+	<!-- .dropdown-five menu -->
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+
+			var dropdown = document.querySelector('#dropdown-five');
+
+			dropdown.addEventListener('click', function (event) {
+				event.stopPropagation();
+				dropdown.classList.toggle('is-active');
+			});
+		});        
+	</script>
+	<!-- /.dropdown-five menu -->
 </head>
-<section class="section has-background-grey">
-	<div class="container">
-		<div class="columns is-multiline is-centered">
-			<div class="column has-text-centered is-8">
-				<div class="content">
-					<h1 class="title is-size-5">Инструкция на "Лиенакс"</h1>
-					<p class="subtitle is-size-5">
-						Инструкция по косметическому и лечебному применению пептидного восстановительного,
-						противовоспалительного лосьона "ЛИЕНАКС" с заживляющим и омолаживающим эффектом, 100 мл.
-					</p>
+
+<body class="has-navbar-fixed-top">
+
+	<nav class="navbar is-fixed-top">
+		<div class="navbar-brand">
+			<b class="title navbar-item">ЛИЕНАКС</b>
+			<a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
+				<span aria-hidden="true"></span>
+				<span aria-hidden="true"></span>
+				<span aria-hidden="true"></span>
+				<span aria-hidden="true"></span>
+			</a>
+		</div>
+		<div class="navbar-menu" id="navMenu">
+			<div class="navbar-start"></div>
+			<div class="navbar-end">
+				<span class="navbar-item"><a>О тимозинах</a></span>
+				<div class="navbar-item has-dropdown is-hoverable">
+					<span class="navbar-item"><a>Продукция </a>
+						<span class="icon is-small">
+							<i class="fa fa-angle-down"></i>
+						</span>
+					</span>
+
+					<div class="navbar-dropdown ">
+						<a class="navbar-item">Лиенакс</a>
+						<a class="navbar-item">Инструкция</a>
+					</div>
+				</div>
+				<span class="navbar-item"><a>Вопросы и ответы</a></span>
+				<span class="navbar-item"><a>Полезные статьи</a></span>
+				<span class="navbar-item"><a>Научные публикации</a></span>
+				<span class="navbar-item"><a>Питание</a></span>
+			</div>
+		</div>
+	</nav>
+
+	<section class="hero has-background-link-light is-fullheight">
+		<div class="hero-head">
+
+		</div>
+		<div class="hero-body">
+			<div class="content is-large">
+				<h1>Инструкция на "Лиенакс"</h1>
+				<p>
+					Инструкция по косметическому и лечебному применению пептидного восстановительного,
+					противовоспалительного лосьона "ЛИЕНАКС" с заживляющим и омолаживающим эффектом, 100 мл.
+				</p>
+			</div>
+		</div>
+		</div>
+		</div>
+	</section>
+
+	<section class="section">
+		<div class="container">
+			<div class="columns is-multiline is-variable 
+			is-1-mobile  
+			is-0-tablet  
+			is-3-desktop  
+			is-8-widescreen  
+			is-2-fullhd">
+				<div class="column is-three-fifths is-offset-one-fifth">
+					<div class="notification">
+						<code>is-two-quarter</code>
+						<button class="delete"></button>
+						<ul>
+							<li>
+								<strong class="font-display">Показания к применению</strong>
+								Пептидный восстановительный, противовоспалительный лосьон "ЛИЕНАКС" с заживляющим и
+								омолаживающим эффектом по своим свойствам и составу предназначен для восстановления
+								молодого здорового состояния кожи и других мягких тканей, излечивания широкого круга
+								аутоиммунно-воспалительных заболеваний: артрита, подагры, ревматоидный и остеоартрит,
+								волчанка, васкулиты, инсульт, рассеянный склероз, регенерация спинного мозга, инфаркт
+								миокарда, хроническая сердечная недостаточность, фиброз, уремия, почечная
+								недостаточность, атрезия желчевыводящих путей, цироз печени, муковисцидоз, склеродермия
+								лёгких, спондилоартрита, дерматита, пролежни, венозные трофические язвы, склеродермия,
+								воспаление связок и сосудов (в т.ч. при варикозе 1 и 2 стадии), простатита, геморроя,
+								раны, ожоги, хим. повреждения, благодаря целевым свойствам пептидов ( Тимозин β-4,
+								Протимозин-α, Паратимозин) входящих в состав лосьона.
+							</li>
+							<li>
+								<strong class="font-display">Фармакодинамика </strong>
+								Средство для восстановления повреждённых мягких тканей, преодоления воспалительных
+								процессов в организме с заживляющим и омолаживающим эффектом основанное на действии
+								малых селезеночных полипептидов (Тимозин β-4, Протимозин-α, Паратимозин), которые при
+								накожном применении лосьона в присутствии пропиленгликоля (пенетранта) проникают в
+								эпидермис, воздействуют на дендритные клетки (в коже – дендритные клетки Лангерганса)
+								которые являются первичной биологической мишенью, и далее управляют сложным
+								противовоспалительным механизмом и направляют их на толерогенный путь дифференцировки.
+								Далее клетки Лангерганса естественным путем мигрируют в ближайшие лимфоузлы и "обучают"
+								незрелые стволовые Т-naiv лимфоциты, превращая их в Т-регуляторы (Foxp3+T-reg-cells),
+								которые системно и специфически нормализуют иммунитет без побочных явлений. Лосьон
+								реализует врожденное свойство клеток Лангерганса препятствовать возникновению
+								аутоиммунного ответа.
+							</li>
+							<li>
+								<strong class="font-display">Противопоказания</strong>
+								Противопоказания за период 5-летнего экспериментального применения не выявлены. До
+								настоящего времени случаи непереносимости не зарегистрированы. Для проверки
+								переносимости нанесите две порции на запястье, разотрите и наблюдайте 3-4 часа. Не
+								должно быть сыпи, покраснения и раздражения.
+								<strong>ВНИМАНИЕ!</strong>
+								Действие лосьона не исследовали при беременности и в период лактации.
+								<br>
+								<strong class="font-display">Побочное действие </strong>
+								Побочные эффекты не были обнаружены в течение регулярного 5-летнего экспериментального
+								применения в т.ч. при ежедневном применении.
+								<br>
+								<strong class="font-display">Взаимодействие с лекарственными средствами </strong>
+								Тимозины лосьона ЛИЕНАКС не проникают глубже эпидермиса и не поступают в кровоток
+								Лосьон сочетается с любыми лекарственными средствами. Это обусловлено тем, что пептиды
+								не поступают в кровоток и не взаимодействуют с лекарственными веществами в организме. В
+								сочетании с обезболивающими и противовоспалительными средствами (НПВС, ГКС,
+								антиметаболиты, моноклональные антитела и др.), их можно применять одновременно с
+								лосьоном при медленном контролируемом снижении дозировки (до полной их отмены), не
+								прекращая использование лосьона..
+							</li>
+							<li>
+								<strong class="font-display">Способ применения и дозы </strong>
+								Нанесите лосьон на ладонь (без избытка) и растирайте лосьон на лице (в т.ч. на веках),
+								шее, декольте до заушных ямок, на кистях рук, пупочную ямку а также на другие проблемные
+								участки тела до полного впитывания дважды в день. Используйте лосьон до достижения
+								очевидного результата. Для ускорения действия допускается сублингвальное применения (по
+								две-четыре порции в день под язык). Физиологический эффект по мере применения нарастает
+								и остается стабильным на длительный срок. Первые позитивные ощущения становятся
+								заметными, начиная с 10-15-го дня. В отличие от известных косметических средств,
+								тимозины лосьона "ЛИЕНАКС" действуют медленно, по механизму восстановления гомеостаза.
+								Эффект передозирования отсутствует.
+								<strong>ВНИМАНИЕ!</strong>
+								Наносите лосьон только на чистую кожу. Через 20 минут после полного впитывания пептидов,
+								можно пользоваться косметическими и лечебными гелями, кремами и мазями.
+								<strong>При наличии ссадин или порезов ощущается временное жжение.</strong>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<aside class="section">
+		<div class="container">
+			<div class="columns is-centered">
+				<div class="column is-8">
+					<div class="content has-text-centered">
+						<h1 class="title">Подпишитесь на нас в социальных сетях</h1>
+						<p class="subtitle">Делимся интересной и полезной информацией о том, как тимозины помогают
+							сохранять здоровье, поддерживать иммунитет и оказывать омолаживающие действие</p>
+					</div>
 				</div>
 			</div>
 
+			<div class="columns">
+
+				<div class="column is-flex">
+					<article class="media notification has-background-info-light">
+						<figure class="media-left">
+							<span class="icon has-text-info">
+								<i class="fas fab fa-2x fa-vk"></i>
+							</span>
+						</figure>
+						<div class="media-content">
+							<h1 class="title is-size-4">Вконтакте</h1>
+							<p class="is-size-5">
+								О здоровье и тимозинах — простым и понятным языком
+							</p>
+						</div>
+					</article>
+				</div>
+
+				<div class="column is-flex">
+					<article class="media notification has-background-warning-light">
+						<figure class="media-left">
+							<span class="icon has-text-danger">
+								<i class="fas fab fa-2x fa-yandex"></i>
+							</span>
+						</figure>
+						<div class="media-content ">
+							<div class="content">
+								<h1 class="title is-size-4">Яндекс.Дзен</h1>
+								<p class="is-size-5">
+									О тимозинах для профессионалов. Делимся новостями науки, тонкостями законодательства и опытом исследователей со всего мира
+								</p>
+							</div>
+						</div>
+					</article>
+				</div>
+
+				<div class="column is-flex">
+					<article class="media notification has-background-link-light">
+						<figure class="media-left">
+							<span class="icon has-text-link">
+								<i class="fas fab fa-2x fa-telegram"></i>
+							</span>
+						</figure>
+						<div class="media-content">
+							<h1 class="title is-size-4">Телеграм</h1>
+							<p class="is-size-5">
+								Подробно о том, при каких проблемах со здоровьем помогают тимозины
+							</p>
+						</div>
+					</article>
+				</div>
+
+			</div>
+		</div>
+	</aside>
+
+	<section class="section" id="dropdown-bottons">
+		<div class="dropdown is-up" id="dropdown-one">
+			<div class="dropdown-trigger">
+				<a class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+					dropdown-one
+				</a>
+			</div>
+			<div class="dropdown-menu" id="dropdown-menu" role="menu">
+				<div class="dropdown-content">
+					<p class="dropdown-item">
+						You can add the <code>is-up</code> modifier to have a dropdown menu
+						that appears above the dropdown button.
+					</p>
+				</div>
+			</div>
 		</div>
 
-</section>
-
-<section class="section">
-	<div class="container">
-
-		<div class="dropdown">
+		<div class="dropdown is-up" id="dropdown-two">
 			<div class="dropdown-trigger">
-				<button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
-					<span>Football Players</span>
-					<span class="icon is-small">
-						<i class="fa fa-angle-down" aria-hidden="true"></i>
-					</span>
-				</button>
+				<a class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+					dropdown-two
+				</a>
 			</div>
 			<div class="dropdown-menu" id="dropdown-menu" role="menu">
 				<div class="dropdown-content">
 					<a href="#" class="dropdown-item">
 						Salah
 					</a>
-					<a href="#" class="dropdown-item is-active">
+					<a href="#" class="dropdown-item">
 						Messi
 					</a>
 					<a href="#" class="dropdown-item ">
@@ -59,19 +372,41 @@
 				</div>
 			</div>
 		</div>
-		<script>
-			document.addEventListener('DOMContentLoaded', function () {
 
-				var dropdown = document.querySelector('.dropdown');
+		<div class="dropdown is-up" id="dropdown-four">
+			<div class="dropdown-trigger">
+				<a class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+					dropdown-four
+				</a>
+			</div>
+			<div class="dropdown-menu" id="dropdown-menu" role="menu">
+				<div class="dropdown-content">
+					<p class="dropdown-item">
+						You can add the <code>is-up</code> modifier to have a dropdown menu
+						that appears above the dropdown button.
+					</p>
+				</div>
+			</div>
+		</div>
 
-				dropdown.addEventListener('click', function (event) {
-					event.stopPropagation();
-					dropdown.classList.toggle('is-active');
-				});
-			});        
-		</script>
-	</div>
-</section>
+		<div class="dropdown is-up" id="dropdown-five">
+			<div class="dropdown-trigger">
+				<a class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+					dropdown-five
+				</a>
+			</div>
+			<div class="dropdown-menu" id="dropdown-menu" role="menu">
+				<div class="dropdown-content">
+					<div class="dropdown-item" <p>
+						You can add the <code>is-up</code> modifier to have a dropdown menu
+						that appears above the dropdown button.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
 </body>
 
 </html>

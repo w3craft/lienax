@@ -2,9 +2,10 @@
 <html>
 {% include head.html %}
 
-<body>
+<body class="has-navbar-fixed-top">
+  {% include nav.html %}
   {{ content }}
+  {% include footer.html %}
 </body>
-
 
 </html>

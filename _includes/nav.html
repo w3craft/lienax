@@ -1,25 +1,33 @@
-<nav class="columns is-mobile is-marginless heading has-text-weight-bold">
-  <div class="column left">
-    <span class="navbar-item">
-      <a href="https://lienax.ru">
-        <img src="/assets/images/lienax.png" alt="Logo" style="width: 6.25rem; height: 1rem;" />
-      </a>
-    </span>
-    <span class="navbar-burger" data-target="MenuHero">
-      <span></span>
-      <span></span>
-      <span></span>
-    </span>
-  </div>
-  <div class="column center desktop">
-    {% for item in site.data.nav %}
-    <span class="navbar-item">
-      <a class="has-text-white" href="{{ item.link }}">{{ item.name }}</a>
-    </span>
-    {% endfor %}
-  </div>
-  <div class="column right desktop">
-    <span class="navbar-item">
-      <a href="https://market.yandex.ru/cc/6JEMvG" target="_blank" class="has-text-white">МАГАЗИН</a></span>
-  </div>
+<nav class="navbar is-fixed-top">
+	<div class="navbar-brand">
+		<b class="title navbar-item">ЛИЕНАКС</b>
+		<a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
+			<span aria-hidden="true"></span>
+			<span aria-hidden="true"></span>
+			<span aria-hidden="true"></span>
+			<span aria-hidden="true"></span>
+		</a>
+	</div>
+	<div class="navbar-menu" id="navMenu">
+		<div class="navbar-start"></div>
+		<div class="navbar-end">
+			<span class="navbar-item"><a>О тимозинах</a></span>
+			<div class="navbar-item has-dropdown is-hoverable">
+				<span class="navbar-item"><a>Продукция </a>
+					<span class="icon is-small">
+						<i class="fa fa-angle-down"></i>
+					</span>
+				</span>
+
+				<div class="navbar-dropdown ">
+					<a class="navbar-item">Лиенакс</a>
+					<a class="navbar-item">Инструкция</a>
+				</div>
+			</div>
+			<span class="navbar-item"><a>Вопросы и ответы</a></span>
+			<span class="navbar-item"><a>Полезные статьи</a></span>
+			<span class="navbar-item"><a>Научные публикации</a></span>
+			<span class="navbar-item"><a>Питание</a></span>
+		</div>
+	</div>
 </nav>
