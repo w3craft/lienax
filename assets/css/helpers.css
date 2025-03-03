@@ -22,3 +22,20 @@
 		display: none;
 	}
 }
+
+.hero {
+	background: white url(assets/images/calcolo_desktop.jpg) center / cover;
+}
+
+
+@media (max-width: 1024px) {
+	.hero {
+		background: white url(assets/images/calcolo_base.jpg) center / cover;
+	}
+}
+
+@media (max-width: 768px) {
+	.hero {
+		background: white url(assets/images/calcolo_mobile.jpg) center / cover;
+	}
+}
