@@ -7,8 +7,26 @@
 	<title>ЛИЕНАКС</title>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
 	<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
-	<!-- link rel="stylesheet" href="assets/css/debug.css" -->
+	<!-- <link rel="stylesheet" href="assets/css/debug.css"> -->
+	<link rel="stylesheet" href="assets/css/helpers.css">
+	<style>
+		.hero {
+			background: white url(assets/images/dendritic-cells.png) center / cover;
+		}
 
+
+		@media (max-width: 1024px) {
+			.hero {
+				background: white url(assets/images/dendritic-cells.png) center / cover;
+			}
+		}
+
+		@media (max-width: 768px) {
+			.hero {
+				background: white url(assets/images/dendritic-cells.png) center / cover;
+			}
+		}
+	</style>
 	<!-- .Burger toggle -->
 	<script>
 		document.addEventListener('DOMContentLoaded', () => {
@@ -118,6 +136,7 @@
 		});        
 	</script>
 	<!-- /.dropdown-five menu -->
+
 </head>
 
 <body class="has-navbar-fixed-top">
@@ -174,8 +193,28 @@
 		</div>
 	</section>
 
+	<section class="section">
+		<div class="container">
+			<div class="columns">
+				<div class="column is-narrow">
+					<div class="box" style="width: 200px">
+						<p class="title is-5">Narrow column</p>
+						<p class="subtitle">This column is only 200px wide.</p>
+					</div>
+				</div>
+				<div class="column">
+					<div class="box">
+						<p class="title is-5">Flexible column</p>
+						<p class="subtitle">
+							This column will take up the remaining space available.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
-	<section class="section" id="instructions">
+	<!-- <section class="section" id="instructions">
 		<div class="container">
 			<div class="columns">
 				<div class="column is-three-fifths is-offset-one-fifth">
@@ -376,9 +415,9 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</section> -->
 
-	<section class="section">
+	<!-- <section class="section">
 		<div class="container">
 			<div class="columns">
 				<div class="column is-three-fifths is-offset-one-fifth">
@@ -446,12 +485,12 @@
 
 			</div>
 		</div>
-	</section>
-
-	
+	</section> -->
 
 
-	<section class="section" id="dropdown-bottons">
+
+
+	<!-- <section class="section" id="dropdown-bottons">
 		<div class="dropdown is-up" id="dropdown-one">
 			<div class="dropdown-trigger">
 				<a class="button" aria-haspopup="true" aria-controls="dropdown-menu">
@@ -528,36 +567,38 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</section> -->
 
-	<section class="section">
-		
+	<!-- <section class="section">
+
 		<div class="notification has-text-centered is-danger is-light">
 			<button class="delete"></button>
 
-		  <!-- Yandex.Metrika informer -->
-		  <a href="https://metrika.yandex.ru/stat/?id=100154617&amp;from=informer" target="_blank" rel="nofollow"><img
-			src="https://informer.yandex.ru/informer/100154617/2_1_B9B9FFFF_9999FFFF_0_pageviews"
-			style="width:80px; height:31px; border:0;" alt="Яндекс.Метрика"
-			title="Яндекс.Метрика: данные за сегодня (просмотры)" class="ym-advanced-informer" data-cid="100154617"
-			data-lang="ru" /></a>
-		<!-- /Yandex.Metrika informer -->
-		<a href="https://webmaster.yandex.ru/siteinfo/?site=lienax.ru">
-		  <img width="88" height="31" alt="" border="0" border-radius="8" src="https://yandex.ru/cycounter?lienax.ru&theme=light&lang=ru"/>
-		</a>
-	</div>
-	</section>
-	
-	<footer class="footer has-background-link-light">
-		<div class="content has-text-centered">
-		  <p>		
-			<a href="https://w3craft.ru" target="_blank"><strong> W3Craft</strong>. </a>
+
+			<a href="https://metrika.yandex.ru/stat/?id=100154617&amp;from=informer" target="_blank" rel="nofollow"><img
+					src="https://informer.yandex.ru/informer/100154617/2_1_B9B9FFFF_9999FFFF_0_pageviews"
+					style="width:80px; height:31px; border:0;" alt="Яндекс.Метрика"
+					title="Яндекс.Метрика: данные за сегодня (просмотры)" class="ym-advanced-informer"
+					data-cid="100154617" data-lang="ru" /></a>
+
 			<a href="https://webmaster.yandex.ru/siteinfo/?site=lienax.ru">
-			  <img width="88" height="31" alt="" border="0" border-radius="8" src="https://yandex.ru/cycounter?lienax.ru&theme=light&lang=ru"/>
+				<img width="88" height="31" alt="" border="0" border-radius="8"
+					src="https://yandex.ru/cycounter?lienax.ru&theme=light&lang=ru" />
 			</a>
-		  </p>
 		</div>
-	  </footer>
+	</section> -->
+
+	<!-- <footer class="footer has-background-link-light">
+		<div class="content has-text-centered">
+			<p>
+				<a href="https://w3craft.ru" target="_blank"><strong> W3Craft</strong>. </a>
+				<a href="https://webmaster.yandex.ru/siteinfo/?site=lienax.ru">
+					<img width="88" height="31" alt="" border="0" border-radius="8"
+						src="https://yandex.ru/cycounter?lienax.ru&theme=light&lang=ru" />
+				</a>
+			</p>
+		</div>
+	</footer> -->
 
 </body>
 
