@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ЛИЕНАКС</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+	<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+	<!-- <link rel="stylesheet" href="assets/css/debug.css"> -->
+	<link rel="stylesheet" href="assets/css/helpers.css">
+	<!-- .Burger toggle -->
+	<script>
+		document.addEventListener('DOMContentLoaded', () => {
+
+			// Get all "navbar-burger" elements
+			const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+			// Add a click event on each of them
+			$navbarBurgers.forEach(el => {
+				el.addEventListener('click', () => {
+
+					// Get the target from the "data-target" attribute
+					const target = el.dataset.target;
+					const $target = document.getElementById(target);
+
+					// Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+					el.classList.toggle('is-active');
+					$target.classList.toggle('is-active');
+
+				});
+			});
+
+		});
+	</script>
+	<!-- /.Burger toggle -->
+
+	<!-- .Delete notify -->
+	<script>
+		document.addEventListener('DOMContentLoaded', () => {
+			(document.querySelectorAll('.notification .delete') || []).forEach(($delete) => {
+				const $notification = $delete.parentNode;
+
+				$delete.addEventListener('click', () => {
+					$notification.parentNode.removeChild($notification);
+				});
+			});
+		});
+	</script>
+	<!-- /.Delete notify -->
+
+</head>
+<body class="has-navbar-fixed-top">
+
+	<nav class="navbar is-fixed-top has-shadow is-spaced">
+		<div class="navbar-brand">
+			<b class="navbar-item">ЛИЕНАКС</b>
+			<a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
+				<span aria-hidden="true"></span>
+				<span aria-hidden="true"></span>
+				<span aria-hidden="true"></span>
+				<span aria-hidden="true"></span>
+			</a>
+		</div>
+		<div class="navbar-menu" id="navMenu">
+			<div class="navbar-start">
+				<span class="navbar-item"><a href="index.html">Главная</a></span>
+				<span class="navbar-item"><a>О тимозинах</a></span>
+				<div class="navbar-item has-dropdown is-hoverable">
+					<span class="navbar-item"><a>Продукция </a>
+						<span class="icon is-small">
+							<i class="fa fa-angle-down"></i>
+						</span>
+					</span>
+
+					<div class="navbar-dropdown">
+						<a class="navbar-item">Лиенакс</a>
+						<a class="navbar-item" href="instruction.html">Инструкция</a>
+					</div>
+				</div>
+				<span class="navbar-item"><a>Вопросы и ответы</a></span>
+				<span class="navbar-item"><a>Полезные статьи</a></span>
+				<span class="navbar-item"><a>Научные публикации</a></span>
+				<span class="navbar-item"><a href="nutrition.html">Питание</a></span>
+			</div>
+			<div class="navbar-end is-mobile">
+				<div class="navbar-item">
+					<a class="button is-warning has-text-link">
+						<strong>Где купить?</strong>
+					</a>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<section class="hero has-background-success-light is-medium">
+		<div class="hero-head"></div>
+		<div class="hero-body"></div>
+		<div class="hero-foot">
+			<div class="notification has-text-centered is-danger is-light">
+				<button class="delete"></button>
+				"Эта страница находится в стадии разработки"
+			</div>
+		</div>
+	</section>
+
+</body>
+</html>
